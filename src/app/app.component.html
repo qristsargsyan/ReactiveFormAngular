@@ -1,7 +1,7 @@
 <button class="btn btn-secondary" type="button" (click)="addForm()">Add form</button>
 
 <form [formGroup]="registerForm">
-    <div formArrayName="items" *ngFor="let item of items.controls; let i = index;">
+    <div formArrayName="items" *ngFor="let item of items?.controls; let i = index;">
         <div [formGroupName]="i">
             <div class="card m-3">
                 <div class="card-body">
